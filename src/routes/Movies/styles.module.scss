@@ -1,0 +1,20 @@
+.list {
+  display: flex;
+
+  margin-bottom: 25px;
+}
+
+.link {
+  padding: 12px 16px;
+
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.active {
+    border-bottom: 3px solid;
+
+    color: #1658ea;
+  }
+}

@@ -1,0 +1,45 @@
+.navigation {
+  flex: 3;
+  height: calc(100vh - 55px);
+  background-color: #353535;
+  border-right: 1px solid #ccc;
+}
+
+.link {
+  &List {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 30px;
+  line-height: 48px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+  &:hover,
+  &.active {
+    background-color: #ffffff14;
+  }
+}
+.sub {
+  padding-left: 50px;
+}
+.logout {
+  @extend .link;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  &Button {
+    margin-top: auto;
+  }
+}

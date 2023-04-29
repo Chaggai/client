@@ -1,0 +1,85 @@
+.usersList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  margin: 0 15px 15px 0;
+  padding: 15px;
+  border-radius: 4px;
+  background: #fff;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.userCard {
+  @extend .card;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+
+.body {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.footer {
+  margin-top: auto;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.permissions {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    flex-grow: 1;
+  }
+}
+
+.inputContainer {
+  margin: 5px;
+  width: 250px;
+}
+
+.label {
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+.input {
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+  height: 35px;
+  &:focus-visible {
+    outline: none;
+    border: 2px solid #1658ea;
+  }
+}
+
+.error {
+  &Msg {
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+    background: #fdeded;
+    color: #5f2120;
+  }
+}

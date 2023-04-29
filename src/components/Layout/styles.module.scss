@@ -1,0 +1,11 @@
+.page {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.outlet {
+  flex: 9;
+  padding: 15px 30px;
+  height: calc(100vh - 55px);
+  overflow-y: scroll;
+}

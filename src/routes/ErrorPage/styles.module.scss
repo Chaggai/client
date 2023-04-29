@@ -1,0 +1,16 @@
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  h1,
+  h2 {
+    margin: 0 0 15px;
+  }
+}
+
+.link {
+  margin-top: 15px;
+}

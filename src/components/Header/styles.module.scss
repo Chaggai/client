@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 55px;
+  padding: 0 30px;
+
+  background: #1658ea;
+  color: #fff;
+  h1 {
+    font-size: 20px;
+  }
+}
+.wellcome {
+  display: flex;
+  align-items: center;
+}
