@@ -22,6 +22,17 @@ const Navigation = () => {
           </NavLink>
         </li>
 
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? `${classes.link} ${classes.active}` : classes.link
+            }
+            to="/members/all"
+          >
+            Members
+          </NavLink>
+        </li>
+
         {isAdmin ? (
           <li>
             <NavLink

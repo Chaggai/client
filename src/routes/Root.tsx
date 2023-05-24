@@ -20,6 +20,10 @@ import CreateUser from "../components/Users/CreateUser";
 import UpdateUser from "../components/Users/UpdateUser";
 import { useSelector } from "react-redux";
 import { selectCurrentToken } from "../redux/authSlice";
+import ShowAllMembers from "../components/Members";
+import CreateMember from "../components/Members/CreateMember";
+import UpdateMember from "../components/Members/UpdateMember";
+import Members from "./Members";
 
 const Root = () => {
   const token = useSelector(selectCurrentToken);
@@ -45,6 +49,15 @@ const Root = () => {
             { path: "all", element: <ShowAllUsers /> },
             { path: "create", element: <CreateUser /> },
             { path: "update/:userId", element: <UpdateUser /> },
+          ],
+        },
+        {
+          path: "members/",
+          element: <Members />,
+          children: [
+            { path: "all", element: <ShowAllMembers /> },
+            { path: "create", element: <CreateMember /> },
+            { path: "update/:memberId", element: <UpdateMember /> },
           ],
         },
       ],
